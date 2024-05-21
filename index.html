@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from html.kodesolution.com/2023/disle-html/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jan 2024 11:55:46 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Disle | Design Agency HTML Template | Home Page 02</title>
+
+
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/popmain.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@699;700&display=swap");
+
+        :root {
+            --lower: 700;
+            --upper: 900;
+        }
+
+        .banner-section .slide-item .title,
+        .banner-section .slide-item .text {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            /* position: absolute; */
+            /* top: 30%;
+            left: 50%; */
+            white-space: nowrap;
+            transform: translate(calc(var(--x, 0) * 1%), calc(var(--y, 0) * 1%));
+            font-variation-settings: "wght" var(--lower);
+            margin: 0;
+        }
+
+        .banner-section .slide-item .title {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 3.5rem;
+        }
+
+        .banner-section .slide-item .title span {
+            color: white;
+            animation: rise 1s ease-in-out;
+            animation-delay: calc((var(--index) - 0) * 0.05s);
+            display: inline-block;
+        }
+
+        @keyframes rise {
+            50% {
+                font-variation-settings: "wght" var(--upper);
+                color: hsla(180, 100%, 100%, var(--alpha-u));
+                transform: translate(0, -15%);
+            }
+        }
+
+        .banner-section .slide-item .text {
+            font-size: 1.7rem;
+            line-height: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .banner-section .slide-item .text span {
+            color: white;
+            animation: rise1 1s ease-in-out;
+            animation-delay: calc((var(--index) - 0) * 0.08s);
+            display: inline-block;
+        }
+
+        @keyframes rise1 {
+            50% {
+                font-variation-settings: "wght" var(--upper);
+                color: hsla(180, 100%, 100%, var(--alpha-u));
+                transform: translate(0, -15%);
+            }
+        }
+
+        .banner-section .slide-item .btn-box {
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 1100px) {
+            .banner-section .auto-container {
+                width: 859px;
+            }
+
+            .banner-section .slide-item .title {
+                font-size: 2.5rem;
+            }
+
+            .banner-section .slide-item .text {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .banner-section .auto-container {
+                width: 719px;
+            }
+
+            .banner-section .slide-item .title {
+                font-size: 2.5rem;
+            }
+
+            .banner-section .slide-item .text {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .banner-section .auto-container {
+                width: 594px;
+            }
+
+            .banner-section .slide-item .title {
+                font-size: 2rem;
+            }
+
+            .banner-section .slide-item .text {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .banner-section .slide-item {
+                height: calc(80vh - 140px);
+            }
+
+            .banner-section .auto-container {
+                width: 537px;
+            }
+
+            .banner-section .slide-item .title {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+
+            .banner-section .slide-item .text {
+                margin-top: 1rem;
+                line-height: 1.6rem;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .banner-section .slide-item {
+                height: calc(80vh - 140px);
+            }
+
+            .banner-section .auto-container {
+                width: 380px;
+            }
+
+            .banner-section .slide-item .title {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+
+            .banner-section .slide-item .text {
+                margin-top: 1rem;
+                line-height: 1.6rem;
+            }
+        }
+
+        @media (max-width: 350px) {
+            .banner-section .slide-item {
+                height: calc(80vh - 140px);
+            }
+
+            .banner-section .auto-container {
+                width: 300px;
+            }
+
+            .banner-section .slide-item .title {
+                font-size: 1.3rem;
+                line-height: 2.2rem;
+            }
+
+            .banner-section .slide-item .text {
+                margin-top: 1rem;
+                line-height: 1.6rem;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="page-wrapper">
+
+        <div class="preloader"></div>
+
+        <header class="main-header header-style-two"></header>
+        <!-- <section class="popup-model d-flex flex-row justify-content-center align-items-center">
+            <div class="model-col model-col-1">
+                <figure>
+                    <img src="images/resource/popup-image.jpg" alt="">
+                </figure>
+            </div>
+            <div class="model-col model-col-2">
+                <div class="close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="#ffffff"
+                            d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 13.4Z">
+                        </path>
+                    </svg>
+                </div>
+                <header class="text-light text-center">
+                    <h1 class="text-uppercase fs-2 text-light text-uppercase position-relative">the digital solution
+                    </h1>
+                    <h5 class="mt-4 fs-6 text-light fw-normal">Join us for a free breakfast to learn more about how to
+                        grow
+                        Your
+                        Business
+                    </h5>
+                </header>
+                <form action="#">
+                    <input type="text" id="" placeholder="your full name">
+                    <input type="email" id="" placeholder="your email address">
+                    <input type="number" id="" placeholder="your phone number">
+
+                    <input type="submit" value="sumbit form">
+                </form>
+            </div>
+        </section> -->
+
+
+        <section class="banner-section">
+            <div class="banner-carousel owl-carousel owl-theme default-navs">
+
+                <div class="slide-item">
+                    <div class="bg-image" style="background-image: url(images/main-slider/1.png);"></div>
+                    <div class="auto-container">
+                        <div class="content-box">
+                            <h1 class="title animate-1 wow fadeInUp animated" data-wow-delay="200ms"
+                                style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;"
+                                id="title_animate">Elevate Brand, Ignite Presence:<br>Unleash Digital Excellence!</h1>
+                            <div class="text animate-2 wow fadeInUp animated" data-wow-delay="400ms"
+                                style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">You have
+                                better things to do than worry about your business</div>
+                            <div class="btn-box animate-3 wow fadeInUp animated" data-wow-delay="600ms"
+                                style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+                                <a href="page-about.html" class="theme-btn btn-style-one hover-light"><span
+                                        class="btn-title">Discover more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-item">
+                    <div class="bg-image" style="background-image: url(images/main-slider/3.png);"></div>
+                    <div class="auto-container">
+                        <div class="content-box">
+                            <h1 class="title animate-1">Empower Your Digital Journey:<br>Innovation Meets Impact!
+                            </h1>
+                            <div class="text animate-2">You have better things to do than worry about your business
+                            </div>
+                            <div class="btn-box animate-3">
+                                <a href="page-about.html" class="theme-btn btn-style-one hover-light"><span
+                                        class="btn-title">Discover more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-item">
+                    <div class="bg-image" style="background-image: url(images/main-slider/4.png);"></div>
+                    <div class="auto-container">
+                        <div class="content-box">
+                            <h1 class="title animate-1">Marketing Hub: Ideas Flourish, Brands<br>Shine, Success Unfolds!
+                            </h1>
+                            <div class="text animate-2">You have better things to do than worry about your business
+                            </div>
+                            <div class="btn-box animate-3">
+                                <a href="page-about.html" class="theme-btn btn-style-one hover-light"><span
+                                        class="btn-title">Discover more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-section-two">
+            <div class="auto-container">
+                <div class="row">
+
+                    <div class="content-column col-lg-6 col-md-12 order-2">
+                        <div class="inner-column">
+                            <div class="sec-title wow fadeInUp animated"
+                                style="visibility: visible; animation-name: fadeInUp;">
+                                <span class="sub-title">Welcome to Sanjar E Solution</span>
+                                <h2 class="title" style="font-size: 2.3rem;">Affordable and Focused Media Solutions.
+                                </h2>
+                                <!-- <h2 class="title">Introducing Quality Digital Agency.</h2> -->
+                                <!-- <h4 class="other-title">Affordable and Focused Media Solutions.</h4> -->
+                                <!-- <div class="text"> There are many variations of simply free text passages of available
+                                    but the majority have suffered alteration in some form</div> -->
+                            </div>
+
+                            <div class="about-info-box wow fadeInUp animated" data-wow-delay="300ms"
+                                style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                                <h4 class="title">Quality Services</h4>
+                                <div class="inner">
+                                    <i class="icon flaticon-satisfaction"></i>
+                                    <div class="text">From innovative strategies to meticulous execution, we ensure that
+                                        every aspect of our service reflects a commitment to
+                                        quality. Join us on the path to success, where superior service is not just a
+                                        promise but a proven reality.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-info-box wow fadeInUp animated" data-wow-delay="300ms"
+                                style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                                <h4 class="title">Expert People</h4>
+                                <div class="inner">
+                                    <i class="icon flaticon-reputation"></i>
+                                    <div class="text">At Sanjar E Solutions, our success is rooted in the expertise of
+                                        our seasoned staff. With years of industry experience,
+                                        our team brings a wealth of knowledge and a proven track record to every
+                                        project. From strategic planning to flawless
+                                        execution, our experienced professionals are dedicated to elevating your
+                                        business. Partner with us for a journey where
+                                        the wisdom of our staff transforms challenges into opportunities, ensuring your
+                                        success every step of the way.</div>
+                                </div>
+                            </div>
+                            <a href="about-us.html" class="theme-btn btn-style-one"><span class="btn-title">Discover
+                                    more</span></a>
+                        </div>
+                    </div>
+
+                    <div class="image-column col-lg-6 col-md-12 wow fadeInLEft" data-wow-delay="600ms">
+                        <div class="inner-column">
+                            <figure class="image-1 anim-overlay wow fadeInLeft animated"
+                                style="visibility: visible; animation-name: fadeInLeft;"><img
+                                    src="images/resource/second-sec-banner-image-11.png" alt></figure>
+                            <figure class="image-2 anim-overlay wow fadeInUp animated"
+                                style="visibility: visible; animation-name: fadeInUp;"><img
+                                    src="images/resource/second-sec-banner-image-2.png" alt></figure>
+                            <div class="exp-box wow fadeInLeft animated" data-wow-delay="300ms"
+                                style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">12+
+                                Years<br> of Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services-section-two">
+            <div class="bg bg-pattern-7"></div>
+            <div class="auto-container">
+                <div class="sec-title3 wow fadeInUp animated" data-wow-delay="250ms"
+                    style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                    <!-- <div class="row">
+                        <div class="col-lg-7">
+                            <span class="sub-title">Our Services</span>
+                            <h2>Comprehensive Suite of Internet Marketing Services.</h2>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="text">Lorem ipsum dolor sit amet nsectetur cing elituspe ndisse suscipit sagitis
+                                leo sit.</div>
+                        </div>
+                    </div> -->
+                    <div class="sec-title text-center wow fadeInUp animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <span class="sub-title">our testimonials</span>
+                        <h2>What Our Customers are<br> Talking About us.</h2>
+                    </div>
+                </div>
+                <div class="carousel-outer">
+                    <div class="services-carousel owl-carousel owl-theme">
+
+                        <div class="service-block-two wow fadeInUp animated" data-wow-delay="250ms"
+                            style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/service-1.jpg" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="performance-marketing.html">Performance<br>Marketing</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="performance-marketing.html">Performance<br>Marketing</a>
+                                    </h5>
+                                    <div class="text">Facebook & Instagram Ads, Google Ads,
+                                        Marketplace Ads, YouTube Ads.</div>
+                                    <a href="performance-marketing.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-block-two wow fadeInUp animated" data-wow-delay="250ms"
+                            style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/seo.png" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="search-engine-optimization.html">Search
+                                            Engine<br>Optimization</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="p">Search
+                                            Engine<br>Optimization</a>
+                                    </h5>
+                                    <div class="text">Elevate online presence with tailored SEO strategies, keyword
+                                        optimization, content creation and transparent reporting
+                                        for improved search rankings.</div>
+                                    <a href="search-engine-optimization.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-block-two wow fadeInUp animated" data-wow-delay="250ms"
+                            style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/graphics-designer.png" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="creative-and-branding.html">Creative & <br>Branding</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="creative-and-branding.html">Creative & <br>Branding</a>
+                                    </h5>
+                                    <div class="text">Transform ideas into art. Our creative and illustration services
+                                        bring your vision to life with captivating visuals and
+                                        imaginative design.</div>
+                                    <a href="creative-and-branding.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="service-block-two wow fadeInUp animated" data-wow-delay="250ms"
+                            style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/service-1.jpg" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Designing</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Designing</a>
+                                    </h5>
+                                    <div class="text">Branding, Website Design, Add Design, UI/UX Design, Landing Page,
+                                        Micro Site.</div>
+                                    <a href="page-service-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="service-block-two wow fadeInUp animated" data-wow-delay="250ms"
+                            style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/website-development.png" alt>
+                                    </figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Technology</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Technology</a>
+                                    </h5>
+                                    <div class="text">Website Development, App Development, Fronted, Backend, Native
+                                        Development, HTML
+                                        Emailers.</div>
+                                    <a href="page-service-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="service-block-two wow fadeInUp animated" data-wow-delay="250ms"
+                            style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/social-media.png" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="social-media-mangement.html">Social Media
+                                            <br>Management</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="">Social Media Management</a>
+                                    </h5>
+                                    <div class="text">ORM, Content Creation, Content Management & Influencer Marketing.
+                                    </div>
+                                    <a href="social-media-mangement.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-block-two wow fadeInUp animated" data-wow-delay="250ms"
+                            style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/website-development.png" alt>
+                                    </figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="website-and-developement.html">Website
+                                            &<br>Technology</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-front-end"></i>
+                                    <h5 class="title"><a href="website-and-developement.html">Website
+                                            &<br>Technology</a>
+                                    </h5>
+                                    <div class="text">There are many variations of simply free text passages.</div>
+                                    <a href="website-and-developement.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="service-block-two wow fadeInUp animated" data-wow-delay="400ms"
+                            style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/graphics-designer.png" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-concept"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Graphic <br>Designing</a></h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-concept"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Graphic <br>Designing</a></h5>
+                                    <div class="text">There are many variations of simply free text passages.</div>
+                                    <a href="page-service-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="service-block-two wow fadeInUp animated" data-wow-delay="600ms"
+                            style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/service-3.jpg" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-android"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Application
+                                            <br>Development</a></h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-android"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Application
+                                            <br>Development</a></h5>
+                                    <div class="text">There are many variations of simply free text passages.</div>
+                                    <a href="page-service-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="service-block-two wow fadeInUp animated" data-wow-delay="800ms"
+                            style="visibility: visible; animation-delay: 800ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/seo.png" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-access"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Social Media
+                                            <br>Optimization</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-access"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Social Media
+                                            <br>Optimization</a>
+                                    </h5>
+                                    <div class="text">There are many variations of simply free text passages.</div>
+                                    <a href="page-service-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="service-block-two wow fadeInUp animated" data-wow-delay="800ms"
+                            style="visibility: visible; animation-delay: 800ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/service-4.jpg" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-access"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Lead <br>Generator</a>
+                                    </h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-access"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Social Media
+                                            <br>Optimization</a>
+                                    </h5>
+                                    <div class="text">There are many variations of simply free text passages.</div>
+                                    <a href="page-service-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="service-block-two wow fadeInUp animated" data-wow-delay="1000ms"
+                            style="visibility: visible; animation-delay: 1000ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/resource/digital-marketing.png" alt></figure>
+                                </div>
+                                <div class="content-box">
+                                    <i class="icon flaticon-campaign"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Digital <br>Marketing</a></h5>
+                                </div>
+                                <div class="hover-content">
+                                    <i class="icon flaticon-campaign"></i>
+                                    <h5 class="title"><a href="page-service-details.html">Digital <br>Marketing</a></h5>
+                                    <div class="text">There are many variations of simply free text passages.</div>
+                                    <a href="page-service-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="bottom-text">
+                    <div class="text">Digital agency services built specifically for your business.</div>
+                    <a href="#" class="theme-btn">Find Your Solution</a>
+                </div>
+            </div>
+        </section>
+<!-- fact-model -->
+
+<section class="fact-model">
+    <div class="auto-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="sec-title text-center wow fadeInUp animated" style="visibility: visible;">
+                    <span class="sub-title">our testimonials</span>
+                    <h2>What Our Customers are<br> Talking About us.</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="test-monial col-md-6 col-lg-3">
+                <header>
+                    <h6>PERFORMANCE</h6>
+                </header>
+                <div class="icon-box">
+                    <img src="images/icons/word-p.svg" alt="">
+                </div>
+                <article>
+                    <p>We talk numbers that really matter &amp; propel your business beyond the competition.</p>
+                </article>
+            </div>
+            <div class="test-monial col-md-6 col-lg-3">
+                <header>
+                    <h6>AGILITY</h6>
+                </header>
+                <div class="icon-box">
+                    <img src="images/icons/word-a.svg" alt="">
+                </div>
+                <article>
+                    <p>We are quick and quality movers when it comes to digital media strategy, execution &amp;
+                        deliverables.</p>
+                </article>
+            </div>
+            <div class="test-monial col-md-6 col-lg-3">
+                <header>
+                    <h6>CONSISTENCY</h6>
+                </header>
+                <div class="icon-box">
+                    <img src="images/icons/word-c.svg" alt="">
+                </div>
+                <article>
+                    <p>We constantly strive to deliver in a reliable, timely and result-oriented manner to
+                        ensure success in meeting digital media agendas.
+                    </p>
+                </article>
+            </div>
+            <div class="test-monial col-md-6 col-lg-3">
+                <header>
+                    <h6>TRANSPARENCY</h6>
+                </header>
+                <div class="icon-box">
+                    <img src="images/icons/word-t.svg" alt="">
+                </div>
+                <article>
+                    <p>We adopt a transparent and honest delivery approach and provide you a crystal-clear view
+                        of your project's progress.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- fact-model-end -->
+
+       
+
+
+        <section class="testimonial-section-two">
+            <div class="auto-container">
+                <div class="sec-title text-center wow fadeInUp animated"
+                    style="visibility: visible; animation-name: fadeInUp;">
+                    <span class="sub-title">our testimonials</span>
+                    <h2>What Our Customers are<br> Talking About us.</h2>
+                </div>
+                <div class="swiper testimonial-swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide p-5">
+                            <ul class="d-flex">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                            </ul>
+                            <h2 class="mt-3 mb-4 fs-5 font-medium text-left text-white">I got this
+                                book as a
+                                birthday
+                                present and simply was not able
+                                to put it down. It made me remember the joy of reading; and I
+                                hope it does the same for you.</h2>
+                            <div class="testimonial-footer">
+                                <div class="tf-col-1 d-flex align-items-center gap-4 w-100">
+                                    <figure class="overflow-hidden m-0">
+                                        <img src="images/resource/testimonial-img-1.png" alt=""
+                                            class="rounded-circle w-100">
+                                    </figure>
+                                    <div class="text-left w-100">
+                                        <p class="text-lg font-semibold mb-0 m-0">Brendon Walton</p>
+                                        <small class="text-sm font-medium">CTO Sales Management</small>
+                                    </div>
+                                </div>
+                                <div class="tf-col-2"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                        viewBox="0 0 20 20" style="transform: scaleX(-1);">
+                                        <path fill="#f5f5f5"
+                                            d="M11 9v7h7V9c0-2.2-1.8-5-4-5h-2l1 2s2 0 2 3zM2 9v7h7V9c0-2.2-1.8-5-4-5H3l1 2s2 0 2 3z" />
+                                    </svg></div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide p-5">
+                            <ul class="d-flex">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                            </ul>
+                            <h2 class="mt-3 mb-4 fs-5 font-medium text-left text-white">I got this
+                                book as a
+                                birthday
+                                present and simply was not able
+                                to put it down. It made me remember the joy of reading; and I
+                                hope it does the same for you.</h2>
+                            <div class="testimonial-footer">
+                                <div class="tf-col-1 d-flex align-items-center gap-4 w-100">
+                                    <figure class="overflow-hidden m-0">
+                                        <img src="images/resource/testimonial-img-1.png" alt=""
+                                            class="rounded-circle w-100">
+                                    </figure>
+                                    <div class="text-left w-100">
+                                        <p class="text-lg font-semibold mb-0 m-0">Brendon Walton</p>
+                                        <small class="text-sm font-medium">CTO Sales Management</small>
+                                    </div>
+                                </div>
+                                <div class="tf-col-2"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                        viewBox="0 0 20 20" style="transform: scaleX(-1);">
+                                        <path fill="#f5f5f5"
+                                            d="M11 9v7h7V9c0-2.2-1.8-5-4-5h-2l1 2s2 0 2 3zM2 9v7h7V9c0-2.2-1.8-5-4-5H3l1 2s2 0 2 3z" />
+                                    </svg></div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide p-5">
+                            <ul class="d-flex">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                            </ul>
+                            <h2 class="mt-3 mb-4 fs-5 font-medium text-left text-white">I got this
+                                book as a
+                                birthday
+                                present and simply was not able
+                                to put it down. It made me remember the joy of reading; and I
+                                hope it does the same for you.</h2>
+                            <div class="testimonial-footer">
+                                <div class="tf-col-1 d-flex align-items-center gap-4 w-100">
+                                    <figure class="overflow-hidden m-0">
+                                        <img src="images/resource/testimonial-img-1.png" alt=""
+                                            class="rounded-circle w-100">
+                                    </figure>
+                                    <div class="text-left w-100">
+                                        <p class="text-lg font-semibold mb-0 m-0">Brendon Walton</p>
+                                        <small class="text-sm font-medium">CTO Sales Management</small>
+                                    </div>
+                                </div>
+                                <div class="tf-col-2"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                        viewBox="0 0 20 20" style="transform: scaleX(-1);">
+                                        <path fill="#f5f5f5"
+                                            d="M11 9v7h7V9c0-2.2-1.8-5-4-5h-2l1 2s2 0 2 3zM2 9v7h7V9c0-2.2-1.8-5-4-5H3l1 2s2 0 2 3z" />
+                                    </svg></div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide p-5">
+                            <ul class="d-flex">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                            </ul>
+                            <h2 class="mt-3 mb-4 fs-5 font-medium text-left text-white">I got this
+                                book as a
+                                birthday
+                                present and simply was not able
+                                to put it down. It made me remember the joy of reading; and I
+                                hope it does the same for you.</h2>
+                            <div class="testimonial-footer">
+                                <div class="tf-col-1 d-flex align-items-center gap-4 w-100">
+                                    <figure class="overflow-hidden m-0">
+                                        <img src="images/resource/testimonial-img-1.png" alt=""
+                                            class="rounded-circle w-100">
+                                    </figure>
+                                    <div class="text-left w-100">
+                                        <p class="text-lg font-semibold mb-0 m-0">Brendon Walton</p>
+                                        <small class="text-sm font-medium">CTO Sales Management</small>
+                                    </div>
+                                </div>
+                                <div class="tf-col-2"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                        viewBox="0 0 20 20" style="transform: scaleX(-1);">
+                                        <path fill="#f5f5f5"
+                                            d="M11 9v7h7V9c0-2.2-1.8-5-4-5h-2l1 2s2 0 2 3zM2 9v7h7V9c0-2.2-1.8-5-4-5H3l1 2s2 0 2 3z" />
+                                    </svg></div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide p-5">
+                            <ul class="d-flex">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                        <path fill="#f5f5f5"
+                                            d="m12 18.275l-4.15 2.5q-.275.175-.575.15t-.525-.2q-.225-.175-.35-.437t-.05-.588l1.1-4.725L3.775 11.8q-.25-.225-.312-.513t.037-.562q.1-.275.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15q.275 0 .537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45q.1.275.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437q-.225.175-.525.2t-.575-.15z" />
+                                    </svg></li>
+                            </ul>
+                            <h2 class="mt-3 mb-4 fs-5 font-medium text-left text-white">I got this
+                                book as a
+                                birthday
+                                present and simply was not able
+                                to put it down. It made me remember the joy of reading; and I
+                                hope it does the same for you.</h2>
+                            <div class="testimonial-footer">
+                                <div class="tf-col-1 d-flex align-items-center gap-4 w-100">
+                                    <figure class="overflow-hidden m-0">
+                                        <img src="images/resource/testimonial-img-1.png" alt=""
+                                            class="rounded-circle w-100">
+                                    </figure>
+                                    <div class="text-left w-100">
+                                        <p class="text-lg font-semibold mb-0 m-0">Brendon Walton</p>
+                                        <small class="text-sm font-medium">CTO Sales Management</small>
+                                    </div>
+                                </div>
+                                <div class="tf-col-2"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                        viewBox="0 0 20 20" style="transform: scaleX(-1);">
+                                        <path fill="#f5f5f5"
+                                            d="M11 9v7h7V9c0-2.2-1.8-5-4-5h-2l1 2s2 0 2 3zM2 9v7h7V9c0-2.2-1.8-5-4-5H3l1 2s2 0 2 3z" />
+                                    </svg></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="sponsors-outer">
+
+                    <ul class="clients-carousel owl-carousel owl-theme">
+                        <li class="client-block"> <a href="#"><img src="images/porfolio/hrbuzzstaffing.png" alt></a>
+                        </li>
+                        <li class="client-block"> <a href="#"><img src="images/porfolio/PARTY-CRUISERS-LTD.png" alt></a>
+                        </li>
+                        <li class="client-block"> <a href="#"><img src="images/porfolio/mindfulfinmythsclear.png"
+                                    alt></a> </li>
+                        <li class="client-block"> <a href="#"><img src="images/porfolio/yourgynaec.png" alt></a> </li>
+                        <li class="client-block"> <a href="#"><img src="images/porfolio/doonsrinagar.png" alt></a> </li>
+                        <li class="client-block"> <a href="#"><img src="images/porfolio/stephn_logo_.png" alt></a> </li>
+                        <li class="client-block"> <a href="https://live101.in/"><img
+                                    src="images/porfolio/live101_logo.png" alt></a> </li>
+                        <li class="client-block"> <a href="https://comfort-mattress.com/"><img
+                                    src="images/porfolio/comfort-mattress.png" alt></a> </li>
+                        <li class="client-block"> <a href="https://sillageniche.com/"><img
+                                    src="images/porfolio/sillageniche.webp" alt></a> </li>
+                        <li class="client-block"> <a href="https://caspianfurniture.com/"><img
+                                    src="images/porfolio/caspianfurniture.png" alt></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faqs-section pt-0">
+            <div class="auto-container">
+                <div class="row">
+
+                    <div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
+                        <div class="inner-column">
+                            <div class="bg bg-image" style="background-image: url(images/background/2.jpg)"></div>
+                            <div class="faq-info-box wow fadeInLeft">
+                                <div class="inner">
+                                    <i class="icon flaticon-verification"></i>
+                                    <h3 class="title">It’s trusted & top digital websites agency</h3>
+                                    <a href="#" class="theme-btn btn-style-one dark-bg hover-light small"><span
+                                            class="btn-title">Get a quote</span></a>
+                                </div>
+                            </div>
+                            <div class="image-box wow fadeInLeft">
+                                <figure class="image"><img src="images/resource/frequently-asked-questions.png" alt>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-column col-xl-6 col-lg-7 col-md-12 col-sm-12">
+                        <div class="inner-column wow fadeIn">
+                            <div class="sec-title wow fadeInUp animated"
+                                style="visibility: visible; animation-name: fadeInUp;">
+                                <span class="sub-title">Question Answers</span>
+                                <h2>See Frequently Asked<br>Questions.</h2>
+                            </div>
+                            <ul class="accordion-box wow fadeInRight">
+
+                                <li class="accordion block">
+                                    <div class="acc-btn">Is my website builder allowed on site?
+                                        <div class="icon fa fa-plus"></div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">There are many variations of passages the majority have
+                                                suffered alteration in some fo injected humour, or randomised words
+                                                believable.</div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion block active-block">
+                                    <div class="acc-btn active">How to soft launch your business?
+                                        <div class="icon fa fa-plus"></div>
+                                    </div>
+                                    <div class="acc-content current">
+                                        <div class="content">
+                                            <div class="text">There are many variations of passages the majority have
+                                                suffered alteration in some fo injected humour, or randomised words
+                                                believable.</div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion block">
+                                    <div class="acc-btn">How to turn visitors into contributors
+                                        <div class="icon fa fa-plus"></div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">There are many variations of passages the majority have
+                                                suffered alteration in some fo injected humour, or randomised words
+                                                believable.</div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion block">
+                                    <div class="acc-btn">How can i find my app solutions?
+                                        <div class="icon fa fa-plus"></div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">There are many variations of passages the majority have
+                                                suffered alteration in some fo injected humour, or randomised words
+                                                believable.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects-section-two industry-presence">
+            <div class="auto-container ">
+                <div class="sec-title text-center wow fadeInUp">
+                    <span class="sub-title">recent projects</span>
+                    <h2>INDUSTRY PRESENCE</h2>
+                </div>
+                <ul class="mt-5 d-flex align-items-stretch flex-wrap text-center indus-presence-main">
+                    <li>
+                        <h3>Retail</h3>
+                    </li>
+                    <li>
+                        <h3>E-Commerce</h3>
+                    </li>
+                    <li>
+                        <h3>Banking</h3>
+                    </li>
+                    <li>
+                        <h3>Insurance</h3>
+                    </li>
+                    <li>
+                        <h3>FinTech</h3>
+                    </li>
+                    <li>
+                        <h3>Media & Entertainment</h3>
+                    </li>
+                    <li>
+                        <h3>Telecom</h3>
+                    </li>
+                    <li>
+                        <h3>Real Estate</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- <section class="projects-section-two p-0">
+            <div class="auto-container">
+                <div class="sec-title text-center wow fadeInUp">
+                    <span class="sub-title">recent projects</span>
+                    <h2>Improve & Enhance the <br>Digital Projects.</h2>
+                </div>
+                <div class="carousel-outer">
+                    <div class="projects-carousel owl-carousel owl-theme">
+
+                        <div class="project-block-two wow fadeInUp animated" data-wow-delay="250ms"
+                            style="visibility: visible; animation-delay: 250ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="page-project-details.html"><img
+                                                src="images/resource/project2-1.jpg" alt></a></figure>
+                                    <a href="page-project-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="content-box">
+                                    <span class="cat">DESIGN / IDEAS</span>
+                                    <h4 class="title"><a href="page-project-details.html" title>Get the Website <br>
+                                            Solutions</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" project-block-two wow fadeInUp animated" data-wow-delay="400ms"
+                            style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="page-project-details.html"><img
+                                                src="images/resource/project2-2.jpg" alt></a></figure>
+                                    <a href="page-project-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="content-box">
+                                    <span class="cat">DESIGN / IDEAS</span>
+                                    <h4 class="title"><a href="page-project-details.html" title>Get the Website <br>
+                                            Solutions</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" project-block-two wow fadeInUp animated" data-wow-delay="600ms"
+                            style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="page-project-details.html"><img
+                                                src="images/resource/project2-3.jpg" alt></a></figure>
+                                    <a href="page-project-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="content-box">
+                                    <span class="cat">DESIGN / IDEAS</span>
+                                    <h4 class="title"><a href="page-project-details.html" title>Get the Website <br>
+                                            Solutions</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" project-block-two wow fadeInUp animated" data-wow-delay="800ms"
+                            style="visibility: visible; animation-delay: 800ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="page-project-details.html"><img
+                                                src="images/resource/project2-4.jpg" alt></a></figure>
+                                    <a href="page-project-details.html" class="read-more"><i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="content-box">
+                                    <span class="cat">DESIGN / IDEAS</span>
+                                    <h4 class="title"><a href="page-project-details.html" title>Get the Website <br>
+                                            Solutions</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- <section class="about-section-three">
+            <div class="bg bg-image pull-up" style="background-image: url(images/background/3.jpg)"></div>
+            <div class="auto-container">
+                <div class="sec-title text-center light">
+                    <span class="sub-title">get to know us more</span>
+                    <h2>Industry Presence</h2>
+                </div>
+                <div class="row">
+
+                    <div class="about-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                        <div class="inner-box">
+                            <figure class="image"><img src="images/resource/our-mission.jpg" alt></figure>
+                            <h6 class="title">Our Mission</h6>
+                            <div class="text">Lorem is free text no use by other agencies.</div>
+                        </div>
+                    </div>
+
+                    <div class="about-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="inner-box">
+                            <figure class="image"><img src="images/resource/our-vision.jpg" alt></figure>
+                            <h6 class="title">Our Vission</h6>
+                            <div class="text">Lorem is free text no use by other agencies.</div>
+                        </div>
+                    </div>
+
+                    <div class="about-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="inner-box">
+                            <figure class="image"><img src="images/resource/our-values.jpg" alt></figure>
+                            <h6 class="title">Our Values</h6>
+                            <div class="text">Lorem is free text no use by other agencies.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="why-choose-us">
+            <div class="bg bg-pattern-8"></div>
+            <div class="auto-container">
+                <div class="row">
+
+                    <div class="content-column col-lg-6 col-md-12">
+                        <div class="inner-column wow fadeInLeft">
+                            <div class="sec-title">
+                                <span class="sub-title">our benefits</span>
+                                <h2> Why You Should <br>Choose us.</h2>
+                                <div class="text">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                    sollicitudin, lorem is simply free text quis bibendum. There are many variations of
+                                    passages of available.</div>
+                            </div>
+                            <ul class="list-style-two two-col mb-0">
+                                <li><i class="fa fa-arrow-alt-circle-right"></i> Top Design Freedom</li>
+                                <li><i class="fa fa-arrow-alt-circle-right"></i> Create Value Strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="features-column col-lg-6 col-md-12 wow fadeInRight">
+                        <div class="row">
+
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <i class="icon flaticon-satisfaction"></i>
+                                    <h5 class="title">Quality Services</h5>
+                                </div>
+                            </div>
+
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <i class="icon flaticon-discuss"></i>
+                                    <h5 class="title">Professional Team</h5>
+                                </div>
+                            </div>
+
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <i class="icon flaticon-reputation"></i>
+                                    <h5 class="title">Trusted by Clients</h5>
+                                </div>
+                            </div>
+
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <i class="icon flaticon-instructor"></i>
+                                    <h5 class="title">Commited to Deliver</h5>
+                                </div>
+                            </div>
+
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <i class="icon flaticon-instructor"></i>
+                                    <h5 class="title">Customer Support</h5>
+                                </div>
+                            </div>
+
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <i class="icon flaticon-instructor"></i>
+                                    <h5 class="title">Latest Technology</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="news-section">
+            <div class="auto-container">
+                <div class="sec-title text-center">
+                    <span class="sub-title">From the Blog</span>
+                    <h2>Latest News & <br>Articles from the Blog.</h2>
+                </div>
+                <div class="row">
+
+                    <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="news-details.html"><img src="images/resource/news-1.jpg"
+                                            alt></a></figure>
+                                <span class="date">20 Mar, 2023</span>
+                            </div>
+                            <div class="content-box">
+                                <div class="author-info">
+                                    <div class="author-thumb"><img src="images/resource/avatar1.jpg" alt></div>
+                                    <span class="author-name">by Mike Hardson</span>
+                                </div>
+                                <h5 class="title"><a href="news-details.html" title>Five Ways that can Develop your
+                                        Business Website</a></h5>
+                                <div class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem…</div>
+                                <ul class="post-info">
+                                    <li class="read-more"><a href="news-details.html" title><i
+                                                class="fa fa-long-arrow-alt-right"></i> More</a></li>
+                                    <li class="comments"><a href="#" title><i class="fa fa-comments color1"></i> 2
+                                            Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="news-details.html"><img src="images/resource/news-2.jpg"
+                                            alt></a></figure>
+                                <span class="date">20 Mar, 2023</span>
+                            </div>
+                            <div class="content-box">
+                                <div class="author-info">
+                                    <div class="author-thumb"><img src="images/resource/avatar1.jpg" alt></div>
+                                    <span class="author-name">by Mike Hardson</span>
+                                </div>
+                                <h5 class="title"><a href="news-details.html" title>Five Ways that can Develop your
+                                        Business Website</a></h5>
+                                <div class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem…</div>
+                                <ul class="post-info">
+                                    <li class="read-more"><a href="news-details.html" title><i
+                                                class="fa fa-long-arrow-alt-right"></i> More</a></li>
+                                    <li class="comments"><a href="#" title><i class="fa fa-comments color1"></i> 2
+                                            Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="news-details.html"><img src="images/resource/news-3.jpg"
+                                            alt></a></figure>
+                                <span class="date">20 Mar, 2023</span>
+                            </div>
+                            <div class="content-box">
+                                <div class="author-info">
+                                    <div class="author-thumb"><img src="images/resource/avatar1.jpg" alt></div>
+                                    <span class="author-name">by Mike Hardson</span>
+                                </div>
+                                <h5 class="title"><a href="news-details.html" title>Five Ways that can Develop your
+                                        Business Website</a></h5>
+                                <div class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem…</div>
+                                <ul class="post-info">
+                                    <li class="read-more"><a href="news-details.html" title><i
+                                                class="fa fa-long-arrow-alt-right"></i> More</a></li>
+                                    <li class="comments"><a href="#" title><i class="fa fa-comments color1"></i> 2
+                                            Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action-two pt-0">
+            <div class="bg bg-image pull-up" style="background-image: url(images/background/4.png)"></div>
+            <div class="auto-container">
+                <h2 class="title">Let’s Get Started New Project.</h2>
+                <div class="text">Lorem ipsum is simply free text available in the market</div>
+                <a href="page-projects.html" class="theme-btn btn-style-one light-bg"><span class="btn-title">Discover
+                        more</span></a>
+            </div>
+        </section>
+
+
+        <footer class="main-footer"></footer>
+
+    </div>
+
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+    <!-- Modal start -->
+    <div>
+       
+        <div>
+            <section class="mobile-footer" style="position: fixed; z-index: 10">
+                <div class="mobile-footer-container">
+                    <div class="mobile-footer-inner-section" data-toggle="modal" data-target="#enquiry-form">
+                        <a><i class="fa-solid fa-comment"></i>
+                            <i >Lets connect</i>
+                        </a>
+                    </div>
+                    <div class="mobile-footer-inner-section">
+                        <a
+                            href="https://api.whatsapp.com/send?phone=123456789&amp;text=Hi%2C%20There%21%0A%0AI%20am%20interested%20in%20exploring%20your%20digital%20offerings%2E">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i>WhatsApp</i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="fixed-btn" data-toggle="modal" data-target="#enquiry-form">
+                <a><button type="button" class="btn-orange">LET'S CONNECT</button></a>
+            </div>
+            <div class="modal fade" id="enquiry-form" tabindex="-1" role="dialog" aria-labelledby="enquiry-formTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-main-flex" role="document">
+                    <div class="modal-flex1">
+                        <img src="./images/modal.jpg" style="width: 80%;" />
+                    </div>
+                    <div class="modal-content modal-flex1 modal-flex1-2">
+                        <div class="modal-header">
+                            <h3>Thinking Growth?</h3>
+                            <h5 class="modal-title pl-2 pl-md-3 text-center" style="font-size: 16px;"
+                                id="exampleModalLongTitle">
+                                Connect with Sanjar e Solutions
+                            </h5>
+                            <button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body d-flex flex-column">
+                            <div id="errmsg"></div>
+                            <div id="msg"></div>
+                            <form id="modal-form-ctc" name="modal_contact_form" class="contact-form form-style36"
+                                action="javascript:void(0)" method="post">
+                                <div class="row clearfix">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" name="form_name" class="form-control form-style36"
+                                                placeholder="Name*" required="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="email" name="form_email"
+                                                class="form-control required email form-style36"
+                                                placeholder="Email Address*" required="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="tel" name="form_number"
+                                                class="form-control required form-style36" placeholder="Contact no*"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-12 col-sm-12 col-xs-12">
+                                  <div class="form-group style-two">
+                                      <textarea name="form_message" class="form-control textarea"
+                                          placeholder=" Message"></textarea>
+                                  </div>
+                              </div> -->
+                                </div>
+                                <div class="contact-section-btn">
+                                    <div class="form-group ml-50 mr-50">
+                                        <!-- <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden"
+                                       /> -->
+                                        <!-- <a href="thankyou.html"> -->
+                                        <button class="theme-btn btn-style-fifteen-1 w-50" id="submit-btn" type="submit"
+                                            data-loading-text="Please wait...">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end here -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".testimonial-swiper", {
+            spaceBetween: 30,
+            // autoplay: {
+            //     delay: 3500,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
+            breakpoints: {
+                0:{
+                    slidesPerView: 1,
+
+                },
+                600: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 2,
+
+                }
+
+            }
+        });
+    </script>
+
+    <!-- // --------------------------------------- Popup model --------------------------------------- -->
+    <!-- <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                openPopupModal();
+            }, 4000);
+        });
+
+        document.querySelector(".popup-model .close-btn").addEventListener("click", () => {
+            closePopupModal();
+        });
+
+        function openPopupModal() {
+            var popupModel = document.querySelector(".popup-model");
+            if (popupModel) {
+                popupModel.style.top = "50%";
+                popupModel.style.left = "40%";
+                popupModel.style.transform = "translate(-50%, -50%)";
+
+                document.body.style.height = "100vh";
+                document.body.style.overflow = "hidden";
+                document.body.style.backgroundColor = "rgba(0, 0, 0, 1)";
+            }
+        }
+
+        function closePopupModal() {
+            var popupModel = document.querySelector(".popup-model");
+            if (popupModel) {
+                popupModel.style.top = "-50%";
+
+                document.body.style.height = "auto";
+                document.body.style.overflow = "auto";
+                document.body.style.backgroundColor = "initial";
+            }
+        }
+
+
+
+    </script> -->
+
+
+    <script src="js/dynamic-data.js"></script>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/script.js"></script>
+
+<!-- pop modal -->
+
+    <script type="text/javascript" charset="utf-8">
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#enquiry-form").modal("show");
+            }, 7000)
+        });
+
+        $(".connect-btn").click(function () {
+            $("#enquiry-form").modal("show");
+        });
+
+    </script>
+</body>
+
+<!-- Mirrored from html.kodesolution.com/2023/disle-html/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jan 2024 11:57:02 GMT -->
+
+</html>

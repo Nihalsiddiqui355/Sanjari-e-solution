@@ -1,0 +1,122 @@
+@media only screen and (max-width: 1280px) {
+  .main-footer .footer-container {
+    max-width: 1100px;
+  }
+
+  .main-footer .footer-container .footer-top ul {
+    /* background-color: red; */
+    gap: 0rem !important;
+  }
+
+  /* @media only screen and (max-width: 1280px) { */
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    padding: 0rem 2rem;
+  }
+
+  main .page-title {
+    padding: 0rem 2rem !important;
+  }
+  .services-details .container .row {
+    flex-direction: column-reverse !important;
+  }
+  .services-details .container .row .col-xl-4 {
+    margin-top: 2rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-details .container .row .col-xl-4 div:nth-child(2) {
+    margin-top: 2rem;
+  }
+  /* ---------------- Footer ------------------- */
+  .main-footer {
+    padding: 0rem 3rem !important;
+  }
+  .main-footer .footer-container .footer-top ul {
+    gap: 1rem !important;
+    row-gap: 1rem !important;
+    flex-wrap: nowrap;
+    justify-content: center !important;
+  }
+
+  .main-footer .footer-container .footer-bottom {
+    flex-direction: column !important;
+  }
+  .main-footer .footer-container .footer-bottom div:first-child {
+    width: 100% !important;
+  }
+  .main-footer .footer-container .footer-bottom div:last-child {
+    width: 100% !important;
+  }
+
+  .main-footer
+    .footer-container
+    .footer-bottom
+    .f-links-container
+    div:nth-child(2) {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  /* ---------------- Footer ------------------- */
+  .main-footer {
+    padding: 0rem 1rem !important;
+  }
+  .main-footer .cr-container {
+    flex-direction: column !important;
+    row-gap: 1rem !important;
+  }
+}
+
+
+
+
+/* Bogor Appy - App Landing HTML Template*/
+
+/* @media only screen and (max-width: 950px) {
+  .mobile-footer-container {
+    position: fixed;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-footer {
+    margin: 0px 0px 50px 0px;
+    padding: 12px 0px;
+  }
+} */
+
+/* @media only screen and (max-width: 950px) {
+  .fixed-btn {
+    display: none;
+  }
+  .whatsapp-logo-div {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-main-flex {
+    flex-direction: column;
+    margin-top: 69px;
+  }
+  .modal-flex1 {
+    text-align: center;
+    width: 100%;
+  }
+  .modal-flex1 img {
+    margin: 0px 0px -40px 0px;
+  }
+} */
